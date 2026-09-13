@@ -27,7 +27,7 @@ function displayLastModified(elementId) {
 // Initialize - call these functions when page loads
 document.addEventListener('DOMContentLoaded', function() {
   // Update year in footer or any element with id="year"
-  displayYear('year');
+  displayYear('currentyear');
   
   // Update last modified in any element with id="lastModified"
   displayLastModified('lastModified');
