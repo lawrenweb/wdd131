@@ -1,19 +1,18 @@
-<<<<<<< HEAD
+// Footer
 
-=======
-// Current Year
 document.getElementById("currentyear").textContent =
     new Date().getFullYear();
 
-// Last Modified
 document.getElementById("lastModified").textContent =
     `Last Modified: ${document.lastModified}`;
 
 // Static Weather Values
+
 const temperature = 8;
 const windSpeed = 10;
 
 // Wind Chill Function
+
 function calculateWindChill(temp, speed) {
     return (
         13.12 +
@@ -23,6 +22,8 @@ function calculateWindChill(temp, speed) {
     ).toFixed(1);
 }
 
+// Display Wind Chill
+
 let windChill = "N/A";
 
 if (temperature <= 10 && windSpeed > 4.8) {
@@ -30,4 +31,3 @@ if (temperature <= 10 && windSpeed > 4.8) {
 }
 
 document.getElementById("windchill").textContent = windChill;
->>>>>>> bc56fef (Completed Place Project)
