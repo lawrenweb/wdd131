@@ -9,7 +9,6 @@
     <title>Samoa</title>
 
     styles/place.css
-
     scripts/place.jsscript>
 </head>
 <body>
@@ -19,18 +18,15 @@
     </header>
 
     <main>
-
         <div class="hero">
             <picture>
-                images/samoa-small.webp
-                <img src="images/samoa-large.webp" alt="cture>
-        </div>
-
-        <section class="data">
-            <h2>Data</h2>
-
-            <p><strong>Area:</strong> 2,842 km²</p>
-            <p><strong>Population:</strong> 225,000</p>
+                <source
+                    srcset="images/samoa-small.webp"
+                    media="(ge.webp"
+                    alt="Beautiful landscape of Samoa"
+                    width="1200"
+                    height="600">
+        <p><strong>Population:</strong> 225,000</p>
             <p><strong>Capital:</strong> Apia</p>
             <p><strong>Languages:</strong> Samoan, English</p>
             <p><strong>Currency:</strong> Samoan Tala</p>
@@ -40,15 +36,16 @@
         <section class="weather">
             <h2>Weather</h2>
 
-            images/weather.svg
+            <img
+                class="weather-icon"
+                src="images/weather.svg"
+                alt="Weather icon"
+                width="60"
+                height="60">
 
             <p><strong>Temperature:</strong> 8°C</p>
-            <p><strong>Conditions:</strong> Partly Cloudy</p>
-            <p><strong>Wind:</strong> 10 km/h</p>
-            <p><strong>Humidity:</strong> 75%</p>
-            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+            <p><strong>Conditionsd Chill:</strong> <span id="windchill"></span></p>
         </section>
-
     </main>
 
     <footer>
