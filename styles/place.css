@@ -1,8 +1,7 @@
 :root {
-    --red: #ce1126;
-    --green: #007847;
-    --white: #ffffff;
-    --light: #f5f5f5;
+    --primary: #ce1126;
+    --secondary: #007847;
+    --light: #ffffff;
 }
 
 * {
