@@ -9,7 +9,7 @@
     <title>Samoa Country Page</title>
 
     styles/place.css
-    <script/place.jsscript>
+    scripts/place.jsscript>
 </head>
 <body>
 
@@ -21,16 +21,12 @@
 
         <picture class="hero">
             <source
-                media="(min  <img
-                src="images/samoa-small.webp"
+                media="(min-width: 768px)"
+                srcset="images/samoa
                 alt="Beautiful view of Samoa"
                 width="1200"
-                height="600">
-        </picture>
-
-        <div class="content">
-
-      <p><strong>Population:</strong> 222,382</p>
+                height="600">  <p><strong>Area:</strong> 2,842 km²</p>
+                <p><strong>Population:</strong> 222,382</p>
                 <p><strong>Capital:</strong> Apia</p>
                 <p><strong>Languages:</strong> Samoan, English</p>
                 <p><strong>Currency:</strong> Tala (WST)</p>
@@ -44,9 +40,8 @@
                 <img
                     src="images/weather.svg"
                     alt="Weather Icon"
-                    class="weather-icon">
-
-                <p><strong>Temperature:</strong> <span id="p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
+                                   <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
                 <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
             </section>
 
