@@ -11,6 +11,7 @@
     styles/place.css
     scripts/place.jsscript>
 </head>
+
 <body>
 
     <header>
@@ -18,15 +19,15 @@
     </header>
 
     <main>
+
         <div class="hero">
             <picture>
                 <source
-                    srcset="images/samoa-small.webp"
-                    media="(ge.webp"
-                    alt="Beautiful landscape of Samoa"
-                    width="1200"
-                    height="600">
-        <p><strong>Population:</strong> 225,000</p>
+                    srcset="images/samoa-large.webp"
+                    media="(min-width: 768px)">
+      alt="Beautiful landscape of Samoa"
+                    width="strong>Area:</strong> 2,842 km²</p>
+            <p><strong>Population:</strong> 225,000</p>
             <p><strong>Capital:</strong> Apia</p>
             <p><strong>Languages:</strong> Samoan, English</p>
             <p><strong>Currency:</strong> Samoan Tala</p>
@@ -43,19 +44,16 @@
                 width="60"
                 height="60">
 
-            <p><strong>Temperature:</strong> 8°C</p>
-            <p><strong>Conditionsd Chill:</strong> <span id="windchill"></span></p>
-        </section>
-    </main>
+            <p><strong>Temperature:</strong> <span id="temp">8</span>°C</p>
+            <p><strong>Conditions:</strong> Cloudy</p>
+            <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+             </p>
 
-    <footer>
         <p>
-            &copy; <span id="currentyear"></span>
-            | Lawren Talamaivao
-            | Samoa
+            Last Modified:
+            <span id="lastModified"></span>
         </p>
-
-        <p id="lastModified"></p>
     </footer>
 
 </body>
