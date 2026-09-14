@@ -3,15 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Discover Samoa's geography, culture, and weather information.">
+    <meta name="description" content="Country Page for Samoa">
     <meta name="author" content="Lawren Talamaivao">
 
-    <title>Samoa</title>
+    <title>Samoa Country Page</title>
 
-styles/place.css
-scripts/place.jsscript>   
+    styles/place.css
+    js/place.jsscript>
 </head>
-
 <body>
 
     <header>
@@ -20,40 +19,46 @@ scripts/place.jsscript>
 
     <main>
 
-        <div class="hero">
-            <picture>
-                <source
-                    srcset="images/samoa-large.webp"
-                    media="(min-width: 768px)">
-      alt="Beautiful landscape of Samoa"
-                    width="strong>Area:</strong> 2,842 km²</p>
-            <p><strong>Population:</strong> 225,000</p>
-            <p><strong>Capital:</strong> Apia</p>
-            <p><strong>Languages:</strong> Samoan, English</p>
-            <p><strong>Currency:</strong> Samoan Tala</p>
-            <p><strong>Time Zone:</strong> UTC +13</p>
-        </section>
+        <picture class="hero">
+            <source media="(minwebp
+            <img src="images/samoa-small.webp" alt="Beautiful view ofclass="content">
 
-        <section class="weather">
-            <h2>Weather</h2>
+            <section class="data">
+                <h2>Data</h2>
 
-            <img
-                class="weather-icon"
-                src="images/weather.svg"
-                alt="Weather icon"
-                width="60"
-                height="60">
+                <p><strong>Area:</strong> 2,842 km²</p>
+                <p><strong>Population:</strong> 222,382</p>
+                <p><strong>Capital:</strong> Apia</p>
+                <p><strong>Languages:</strong> Samoan, English</p>
+                <p><strong>Currency:</strong> Tala (WST)</p>
+                <p><strong>Time Zone:</strong> UTC +13</p>
+                <p><strong>Calling Code:</strong> +685</p>
 
-            <p><strong>Temperature:</strong> <span id="temp">8</span>°C</p>
-            <p><strong>Conditions:</strong> Cloudy</p>
-            <p><strong>Wind:</strong> <span id="wind">10</span> km/h</p>
-            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
-             </p>
+            </section>
 
+            <section class="weather">
+                <h2>Weather</h2>
+
+                images/weather.svg
+
+                <p><strong>Temperature:</strong> <span id="temperature">10</span>°C</p>
+                <p><strong>Conditions:</strong> Partly Cloudy</p>
+                <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
+                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+
+            </section>
+
+        </div>
+
+    </main>
+
+    <footer>
         <p>
-            Last Modified:
-            <span id="lastModified"></span>
+            &copy; <span id="currentyear"></span>
+            🌺 Lawren Talamaivao 🌺 Samoa
         </p>
+
+        <p id="lastModified"></p>
     </footer>
 
 </body>
