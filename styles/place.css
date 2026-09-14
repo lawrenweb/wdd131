@@ -1,1 +1,122 @@
+<<<<<<< HEAD
+
+=======
+:root {
+    --primary-color: #002b7f;
+    --secondary-color: #ffffff;
+    --accent-color: #ce1126;
+    --card-bg: rgba(255, 255, 255, 0.9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    background-color: #f4f4f4;
+}
+
+/* Header */
+
+header {
+    background-color: var(--primary-color);
+    color: var(--secondary-color);
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Hero Image */
+
+picture img {
+    width: 100%;
+    display: block;
+}
+
+/* Main */
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Cards */
+
+.data,
+.weather {
+    background-color: white;
+    margin: 1rem;
+    padding: 1rem;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+}
+
+.data h2,
+.weather h2 {
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+.data p,
+.weather p {
+    margin: 0.5rem 0;
+}
+
+/* Mobile Weather Icon */
+
+.weather-icon {
+    width: 60px;
+    display: block;
+    margin: 0 auto 1rem;
+}
+
+/* Footer */
+
+footer {
+    background-color: var(--primary-color);
+    color: white;
+    text-align: center;
+    padding: 1rem;
+}
+
+/* Desktop Layout */
+
+@media screen and (min-width: 768px) {
+
+    .hero {
+        position: relative;
+    }
+
+    .data {
+        position: absolute;
+        top: 100px;
+        left: 30px;
+        width: 300px;
+        background-color: var(--card-bg);
+    }
+
+    .weather {
+        position: absolute;
+        bottom: 60px;
+        right: 30px;
+        width: 300px;
+        background-color: var(--card-bg);
+    }
+
+    /* Required pseudo-element */
+
+    .weather h2::after {
+        content: " ⛅";
+    }
+
+    /* Hide SVG icon on desktop */
+
+    .weather-icon {
+        display: none;
+    }
+}
+>>>>>>> bc56fef (Completed Place Project)
 
