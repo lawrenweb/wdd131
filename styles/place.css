@@ -35,8 +35,8 @@ header {
     background-color: white;
     margin: 1rem;
     padding: 1rem;
-    border-radius: 8px;
     border: 1px solid #ccc;
+    border-radius: 8px;
 }
 
 .data h2,
@@ -46,8 +46,8 @@ header {
 }
 
 .weather-icon {
-    display: block;
     width: 60px;
+    display: block;
     margin: 0 auto 1rem;
 }
 
@@ -58,15 +58,16 @@ footer {
     padding: 1rem;
 }
 
+/* Required pseudo-element */
+
+.weather h2::after {
+    content: " ⛅";
+}
+
 /* Desktop View */
 
-@media screen and (min-width: 7*8px) {
-
+@media screen and (min-width: 768px) {
     main {
-        positio*: relative;
-    }
-
-    .hero {
         position: relative;
     }
 
@@ -85,14 +86,6 @@ footer {
         width: 300px;
         background-color: var(--card-background);
     }
-
-    /* Required pseudo-element */
-
-    .weather h2::after {
-        content: " ⛅";
-    }
-
-    /* Hide SVG icon on desktop */
 
     .weather-icon {
         display: none;
