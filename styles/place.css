@@ -16,17 +16,22 @@ body {
 }
 
 header {
-    background: var(--red);
+    background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto;
 }
 
 .hero {
     position: relative;
 }
 
-.hero img {
+picture img {
     width: 100%;
     height: auto;
     display: block;
@@ -34,7 +39,7 @@ header {
 
 .data,
 .weather {
-    background: rgba(255,255,255,.9);
+    background: rgba(255, 255, 255, 0.9);
     padding: 1rem;
     text-align: center;
 }
@@ -44,34 +49,37 @@ header {
     margin-bottom: 1rem;
 }
 
+.data p,
+.weather p {
+    margin: 0.5rem 0;
+}
+
 .weather-icon {
     display: block;
     margin: 1rem auto;
+    width: 60px;
+    height: auto;
 }
 
 footer {
-    background: var(--red);
+    background: var(--primary);
     color: white;
     text-align: center;
     padding: 1rem;
 }
 
 footer p {
-    margin: .25rem;
+    margin: 0.25rem;
 }
 
 @media screen and (min-width: 768px) {
-
-    .hero {
-        position: relative;
-    }
 
     .data {
         position: absolute;
         top: 40px;
         left: 30px;
         width: 260px;
-        background: rgba(255,255,255,.9);
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .weather {
@@ -79,14 +87,14 @@ footer p {
         bottom: 40px;
         right: 30px;
         width: 260px;
-        background: rgba(255,255,255,.9);
+        background: rgba(255, 255, 255, 0.9);
     }
 
     .data h2,
     .weather h2 {
-        background: var(--green);
+        background: var(--secondary);
         color: white;
-        padding: .5rem;
+        padding: 0.5rem;
     }
 
     .weather h2::after {
