@@ -9,7 +9,6 @@
     <title>Samoa Country Page</title>
 
     styles/place.css
-    scripts/place.jsscript>
 </head>
 <body>
 
@@ -20,32 +19,31 @@
     <main>
 
         <picture class="hero">
-            <source
-                media="(min-width: 768px)"
-                srcset="images/samoa
-                alt="Beautiful view of Samoa"
-                width="1200"
-                height="600">  <p><strong>Area:</strong> 2,842 km²</p>
-                <p><strong>Population:</strong> 222,382</p>
-                <p><strong>Capital:</strong> Apia</p>
-                <p><strong>Languages:</strong> Samoan, English</p>
-                <p><strong>Currency:</strong> Tala (WST)</p>
-                <p><strong>Time Zone:</strong> UTC +13</p>
-                <p><strong>Calling Code:</strong> +685</p>
-            </section>
+            images/samoa-large.webp
+            images/samoa-small.webp
+        </picture>
 
-            <section class="weather">
-                <h2>Weather</h2>
+        <section class="data">
+            <h2>Data</h2>
 
-                <img
-                    src="images/weather.svg"
-                    alt="Weather Icon"
-                                   <p><strong>Conditions:</strong> Partly Cloudy</p>
-                <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
-                <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
-            </section>
+            <p><strong>Area:</strong> 2,842 km²</p>
+            <p><strong>Population:</strong> 222,382</p>
+            <p><strong>Capital:</strong> Apia</p>
+            <p><strong>Languages:</strong> Samoan, English</p>
+            <p><strong>Currency:</strong> Tala (WST)</p>
+            <p><strong>Time Zone:</strong> UTC +13</p>
+            <p><strong>Calling Code:</strong> +685</p>
+        </section>
 
-        </div>
+        <section class="weather">
+            <h2>Weather</h2>
+
+            images/weather.svg
+
+            <p><strong>Conditions:</strong> Partly Cloudy</p>
+            <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
+            <p><strong>Wind Chill:</strong> <span id="windchill"></span></p>
+        </section>
 
     </main>
 
@@ -57,6 +55,8 @@
 
         <p id="lastModified"></p>
     </footer>
+
+    scripts/place.jsscript>
 
 </body>
 </html>
