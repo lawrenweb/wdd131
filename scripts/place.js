@@ -1,25 +1,26 @@
-// Footer
-document.getElementById("currentyear").textContent = new Date().getFullYear();
-document.getElementById("lastModified").textContent =
-`Last Modified: ${document.lastModified}`;
+const temperature = 29;
 
-// Weather Data
-const temperature = 8; // °C
-const windSpeed = 5; // km/h
+const windSpeed = 12;
+ 
+function calculateWindChill(temperature, windSpeed) {
 
-function calculateWindChill(temp, speed) {
-    return (
-        13.12 +
-        0.6215 * temp -
-        11.37 * Math.pow(speed, 0.16) +
-        0.3965 * temp * Math.pow(speed, 0.16)
-    ).toFixed(1);
+    return 13.12 + (0.6215 * temperature) - (11.37 * Math.pow(windSpeed, 0.16)) + (0.3965 * temperature * Math.pow(windSpeed, 0.16));
+
 }
-
-let windChill = "N/A";
-
+ 
+const windChillElement = document.querySelector("#wind-chill");
+ 
 if (temperature <= 10 && windSpeed > 4.8) {
-    windChill = `${calculateWindChill(temperature, windSpeed)} °C`;
-}
 
-document.getElementById("windChill").textContent = windChill;
+    windChillElement.textContent = `${calculateWindChill(temperature, windSpeed).toFixed(1)} °C`;
+
+} else {
+
+    windChillElement.textContent = "N/A";
+
+}
+ 
+document.querySelector("#currentyear").textContent = new Date().getFullYear();
+ 
+document.querySelector("#lastModified").textContent = document.lastModified;
+ 
