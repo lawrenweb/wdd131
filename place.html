@@ -18,10 +18,10 @@
 
     <main>
 
-        <picture class="hero">
-            images/samoa-large.webp
-            images/samoa-small.webp
-        </picture>
+     <picture>
+    <source media="(min-width: 768px)" srcset="images/samoa-large.webp">
+    <img src="images/samoa-small.webp" alt="Beautiful landscape of Samoa">
+</picture>
 
         <section class="data">
             <h2>Data</h2>
@@ -38,7 +38,7 @@
         <section class="weather">
             <h2>Weather</h2>
 
-            images/weather.svg
+            <img src="images/weather.svg" alt="Weather icon" class="weather-icon">
 
             <p><strong>Conditions:</strong> Partly Cloudy</p>
             <p><strong>Wind:</strong> <span id="windspeed">5</span> km/h</p>
