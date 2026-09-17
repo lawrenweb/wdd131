@@ -111,6 +111,11 @@ p {
     margin: 0 auto;
 }
 
+.visually-hidden {
+    position: absolute;
+    left: -9999px;
+}
+
  
 footer {
 
