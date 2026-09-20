@@ -106,3 +106,35 @@ footer {
 footer p {
     margin: 0.3rem 0;
 }
+
+@media (max-width: 600px) {
+    header {
+        padding: 1.25rem 0.75rem 0.85rem;
+    }
+
+    header h1 {
+        font-size: 2rem;
+    }
+
+    nav ul {
+        gap: 0.25rem;
+    }
+
+    nav a {
+        padding: 0.45rem 0.65rem;
+        font-size: 0.9rem;
+    }
+
+    main {
+        padding: 1.5rem 0.75rem 2rem;
+    }
+
+    .gallery {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+    }
+
+    .temple-card img {
+        height: 210px;
+    }
+}
