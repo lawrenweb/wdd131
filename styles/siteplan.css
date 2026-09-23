@@ -1,0 +1,44 @@
+:root {
+    --primary-color: #1D3557;
+    --secondary-color: #F1FAEE;
+    --accent-color: #F4A261;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: var(--secondary-color);
+    color: #333;
+    margin: 0;
+    padding: 20px;
+    line-height: 1.6;
+}
+
+header {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.logo {
+    font-size: 2rem;
+    font-weight: bold;
+    color: var(--accent-color);
+}
+
+h1,
+h2 {
+    color: var(--primary-color);
+}
+
+section {
+    background-color: white;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.color-palette {
+    display: flex;
+    justify-content: space-around;
+    margin-top: 20px;
+}
