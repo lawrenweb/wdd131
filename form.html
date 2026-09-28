@@ -3,87 +3,85 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   
     <title>Product Review Form</title>
+
     <meta name="description" content="Complete a product review form by selecting a product, providing a rating, choosing useful features, and sharing feedback about your experience.">
     <meta name="author" content="Lawren Talamaivao">
-   
 
     <link rel="stylesheet" href="styles/form.css">
-    <script src="scripts/form.js" defer></script>
-</head>
+    <script src="scripts/form.js"></script>
     
+</head>
 <body>
 
-<header>
-    <h1>Product Review Form</h1>
-</header>
+    <header>
+        <h1>Product Review Form</h1>
+    </header>
 
-<main>
-    <form method="get" action="review.html">
+    <main>
+        <form method="get" action="review.html">
 
-        <label for="productName">Product Name *</label>
-        <select id="productName" name="productName" required>
-            <option value="" disabled selected>Select a Product ...</option>
-        </select>
+            <label for="productName">Product Name *</label>
+            <select id="productName" name="productName" required>
+                <option value="" disabled selected>Select a Product ...</option>
+                <option value="product1">Product 1</option>
+                <option value="product2">Product 2</option>
+                <option value="product3">Product 3</option>
+            </select>
 
-        <fieldset>
-            <legend>Overall Rating *</legend>
+            <fieldset>
+                <legend>Overall Rating *</legend>
 
-            <label><input type="radio" name="rating" id="rating1" value="1" required> ☆</label>
-            <label><input type="radio" name="rating" id="rating2" value="2"> ☆☆</label>
-            <label><input type="radio" name="rating" id="rating3" value="3"> ☆☆☆</label>
-            <label><input type="radio" name="rating" id="rating4" value="4"> ☆☆☆☆</label>
-            <label><input type="radio" name="rating" id="rating5" value="5"> ☆☆☆☆☆</label>
-        </fieldset>
+                <input type="radio" id="rating1" name="rating" value="1" required>
+                <label for="rating1">☆</label>
 
-        <label for="installDate">Date of Installation *</label>
-        <input type="date" id="installDate" name="installDate" required>
+                <input type="radio" id="rating2" name="rating" value="2" required>
+                <label for="rating2">☆☆</label>
 
-     <fieldset>
-           <legend>Overall Rating *</legend>
+                <input type="radio" id="rating3" name="rating" value="3" required>
+                <label for="rating3">☆☆☆</label>
 
-             <label>
-              <input type="radio" id="rating1" name="rating" value="1" required>
-            ☆
-             </label>
+                <input type="radio" id="rating4" name="rating" value="4" required>
+                <label for="rating4">☆☆☆☆</label>
 
-             <label>
-          <input type="radio" id="rating2" name="rating" value="2" required>
-          ☆☆
-            </label>
+                <input type="radio" id="rating5" name="rating" value="5" required>
+                <label for="rating5">☆☆☆☆☆</label>
+            </fieldset>
 
-          <label>
-          <input type="radio" id="rating3" name="rating" value="3" required>
-           ☆☆☆
-           </label>
+            <label for="installDate">Date of Installation *</label>
+            <input type="date" id="installDate" name="installDate" required>
 
-             <label>
-           <input type="radio" id="rating4" name="rating" value="4" required>
-          ☆☆☆☆
-          </label>
+            <fieldset>
+                <legend>Useful Features</legend>
 
-            <label>
-        <input type="radio" id="rating5" name="rating" value="5" required>
-        ☆☆☆☆☆
-             </label>
-</fieldset>
+                <input type="checkbox" id="durability" name="features" value="Durability">
+                <label for="durability">Durability</label>
 
-        <label for="review">Written Review</label>
-        <textarea id="review" name="review" rows="5"></textarea>
+                <input type="checkbox" id="easeofuse" name="features" value="Ease of Use">
+                <label for="easeofuse">Ease of Use</label>
 
-        <label for="username">Your Name</label>
-        <input type="text" id="username" name="username">
+                <input type="checkbox" id="performance" name="features" value="Performance">
+                <label for="performance">Performance</label>
 
-        <input type="submit" value="Submit Review">
+                <input type="checkbox" id="design" name="features" value="Design">
+                <label for="design">Design</label>
+            </fieldset>
 
-    </form>
-</main>
+            <label for="review">Written Review</label>
+            <textarea id="review" name="review" rows="5"></textarea>
 
-<footer>
-    <p>&copy; <span id="year"></span> | Lawren Talamaivao | New Zealand</p>
-    <p id="lastModified"></p>
-</footer>
+            <label for="username">Your Name</label>
+            <input type="text" id="username" name="username">
+
+            <input type="submit" value="Submit Review">
+
+        </form>
+    </main>
+
+    <footer>
+        <p>&copy; <span id="year"></span> | Lawren Talamaivao | New Zealand</p>
+        <p id="lastModified"></p>
+    </footer>
 
 </body>
 </html>
